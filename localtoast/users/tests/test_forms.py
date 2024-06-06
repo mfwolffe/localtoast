@@ -2,8 +2,8 @@
 
 from django.utils.translation import gettext_lazy as _
 
-from tictactoe.users.forms import UserAdminCreationForm
-from tictactoe.users.models import User
+from localtoast.users.forms import UserAdminCreationForm
+from localtoast.users.models import User
 
 
 class TestUserAdminCreationForm:
