@@ -1,7 +1,14 @@
 import { useState } from 'react'
+import viteLogo from './assets/vite.svg'
 import reactLogo from './assets/react.svg'
 import djangoLogo from './assets/django.svg'
-import viteLogo from './assets/vite.svg'
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+
 import './App.css'
 
 // function App({username}) {

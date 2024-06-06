@@ -277,5 +277,7 @@ localtoast/media/
 
 **/static/assets/
 
-
+# Sterces 
+# https://miro.medium.com/v2/resize:fit:1280/1*jwio-g6ysyPdR-7Wr59spw.gif
 .env
+**/.npmrc
