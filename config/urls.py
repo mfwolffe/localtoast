@@ -27,7 +27,7 @@ urlpatterns = [
     # Your stuff: custom urls includes go here
     path("api/", api.urls),
     re_path("", HomeView.as_view(), name="home"),
-
+    path("convert/", include("guest_user.urls")),
     # Media files
     *static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
 ]
