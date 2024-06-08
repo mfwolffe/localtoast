@@ -5,6 +5,26 @@
   text-align: center;
 }
 
+#toast-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent !important;
+  width: 100%;
+  border: none;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+#toast-card img {
+  margin: auto;
+}
+
+h1.splash {
+  font-size: 5rem;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
