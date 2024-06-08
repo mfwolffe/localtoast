@@ -1,4 +1,5 @@
 import { useSpring, animated } from '@react-spring/web'
+import { useTrail } from '@react-spring/web'
 import toast from "./../media/toast.png"
 
 export default function SplashToast() {

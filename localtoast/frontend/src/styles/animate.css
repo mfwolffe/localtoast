@@ -1,0 +1,4 @@
+.splash-trail {
+  will-change: transform, opacity;
+  overflow: hidden;
+}
