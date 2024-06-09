@@ -3,11 +3,11 @@ from .api import api
 from .views import HomeView
 from django.conf import settings
 from django.contrib import admin
+from ninja import NinjaAPI, Schema
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
 from django.urls import include, re_path, path
 from django.views import defaults as default_views
-
 
 urlpatterns = [
     # path("", TemplateView.as_view(template_name="index.html"), name="home"),
@@ -23,11 +23,11 @@ urlpatterns = [
     # User management
     path("users/", include("localtoast.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
+    path("convert/", include("guest_user.urls")),
 
     # Your stuff: custom urls includes go here
     path("api/", api.urls),
     re_path("", HomeView.as_view(), name="home"),
-    path("convert/", include("guest_user.urls")),
     # Media files
     *static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
 ]

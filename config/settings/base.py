@@ -89,6 +89,7 @@ THIRD_PARTY_APPS = [
     "allauth.socialaccount",
     "allauth.socialaccount.providers.google",
     "guest_user",
+    "guest_user.contrib.allauth",
 ]
 
 LOCAL_APPS = [
