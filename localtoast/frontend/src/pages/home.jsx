@@ -6,7 +6,21 @@ import toast from "./../media/toast.png"
 
 // const navigate   = useNavigate();
 const DarkMagick = <span className='jacquard-12-regular'>dark magick</span>
-const IsLoggedIn = <animated.p className="ubuntu-light">You are logged in as <animated.span className="ubuntu-bold">{username}</animated.span></animated.p>
+
+const RegistrationLinks = () => {
+  return (
+  <>
+    <animated.p className="ubuntu-light mb-0 mt-3">You are not logged in.</animated.p>
+    <animated.p className="ubuntu-light">
+      <animated.a href="">Register</animated.a> | <animated.a href="">Login</animated.a>
+    </animated.p>
+  </>
+  );
+}
+
+const LoginBlock = (<animated.p className="ubuntu-light">
+  { username ? `You are logged in as ${username}` : RegistrationLinks() }
+</animated.p>);
 
 const PlainToast      = <animated.img src={toast} className="mt-4 mb-4"></animated.img>
 const SiteName        = <animated.h1 className="monoton-regular splash">Local Toast</animated.h1>
@@ -25,7 +39,7 @@ const EnterButton = (
 export default function Home() {
   const [toggle, set] = useState(true);
   
-  const items = [SiteName, SiteSummary, PlainToast,  SiteDescription, IsLoggedIn, EnterButton];
+  const items = [SiteName, SiteSummary, PlainToast,  SiteDescription, LoginBlock, RegistrationLinks, EnterButton];
   const config = { mass: 25, tension: 2250, friction: 250 };
 
   const trail = useTrail(items.length, {
