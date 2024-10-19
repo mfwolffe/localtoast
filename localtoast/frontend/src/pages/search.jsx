@@ -2,13 +2,15 @@ import Form from 'react-bootstrap/Form';
 
 function SearchBar() {
   return (
-    <div className="mt-5">
-      <Form>
-        <Form.Group className="mb-3" controlId="search">
-          <Form.Control type="text" placeholder="ZIP???" aria-label='Search'/>
-        </Form.Group>
-      </Form>
-    </div>
+    <main className="search">
+      <div id='search-container' className='mt-2'>
+        <Form>
+          <Form.Group className="" controlId="search">
+            <Form.Control className='search' type="text" placeholder="City/ZIP Code" aria-label='Search'/>
+          </Form.Group>
+        </Form>
+      </div>
+    </main>
   );
 }
 

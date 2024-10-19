@@ -4,7 +4,6 @@ import { animated } from '@react-spring/web'
 
 import toast from "./../media/toast.png"
 
-// const navigate   = useNavigate();
 const DarkMagick = <span className='jacquard-12-regular'>dark magick</span>
 
 const RegistrationLinks = () => {
