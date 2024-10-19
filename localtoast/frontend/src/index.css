@@ -11,6 +11,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --lnd-bg: #1a1a1a;
+  --blue: #159ce4;
+  --lgt-blue: #5bb8d6;
+  --drk-blue: #147ec1;
+  --black: #32383c;
+  --lnk-prp: #646cff;
+  --old-prp: #646cff;
 }
 
 a {
@@ -46,9 +53,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -65,4 +74,60 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+button.fd-in {  
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  color: var(--blue);
+  border-radius: 24px;
+  transition: all 0.5s ease;
+  border: 2px solid var(--blue);
+}
+
+button.fd-in:hover {
+  color: var(--lnd-bg);
+  background-color: var(--lgt-blue);
+  border-color: var(--lgt-blue);
+}
+
+button.fd-in:active {
+  color: #fff;
+  background-color: var(--drk-blue);
+  border-color: var(--drk-blue);
+}
+
+button.fd-in:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px rgba(21, 156, 228, 0.4);
+}
+
+form {
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  color: var(--black);
+  width: 100%;
+}
+
+input[type="text"] {
+  padding: 10px 16px;
+  font-size: 16px;
+  color: var(--black);
+  background-color: #fff;
+  border: 1px solid #597183;
+  border-radius: 8px;
+  margin-top: 5px;
+  width: 100%;
+  transition: all 0.7s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(21, 156, 228, 0.4);
 }

@@ -1,5 +1,5 @@
 import Home from './pages/home';
-import Dash from './pages/dash';
+import SearchBar from './pages/search';
 import { Button } from 'react-bootstrap';
 
 import {
@@ -21,7 +21,7 @@ function App() {
     <Router>
       <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/dash" element={<Dash />} />
+          <Route path="/search" element={<SearchBar />} />
       </Routes>
     </Router>
   );

@@ -10,27 +10,26 @@ const DarkMagick = <span className='jacquard-12-regular'>dark magick</span>
 const RegistrationLinks = () => {
   return (
   <>
-    <animated.p className="ubuntu-light mb-0 mt-3">You are not logged in.</animated.p>
+    <animated.p className="ubuntu-light mb-0">You are not logged in.</animated.p>
     <animated.p className="ubuntu-light">
-      <animated.a href="">Register</animated.a> | <animated.a href="">Login</animated.a>
+      <animated.a href="/accounts/signup/">Register</animated.a> | <animated.a href="/accounts/login/">Login</animated.a>
     </animated.p>
   </>
   );
 }
 
-const LoginBlock = (<animated.p className="ubuntu-light">
+const LoginBlock = (<animated.p className="ubuntu-light mt-5 mb-4">
   { username ? `You are logged in as ${username}` : RegistrationLinks() }
 </animated.p>);
 
 const PlainToast      = <animated.img src={toast} className="mt-4 mb-4"></animated.img>
 const SiteName        = <animated.h1 className="monoton-regular splash">Local Toast</animated.h1>
 const SiteSummary     = <animated.h2 className="ubuntu-light splash">Find toast(s) near you using { DarkMagick }</animated.h2>
-// const LoggedIn        = <animated.p className="ubuntu-light">{username ? `You are logged in as ${username}` : "You are not logged in" }</animated.p>
 const SiteDescription = <animated.h3 className="ubuntu-light splash">Local Toast exists to serve one purpose: find you the best toast you've had in your entire life. You can thank us later.</animated.h3>
 
 const EnterButton = (
-    <animated.a href="/dash">
-      <animated.button>
+    <animated.a href="/search">
+      <animated.button className="fd-in">
         Enter
       </animated.button>
     </animated.a>
